@@ -17,7 +17,6 @@ const Movie = props => {
 
   useState(() => {
     const { id } = props.match.params;
-    console.log(id);
     fetchMovie(id);
   }, []);
 
